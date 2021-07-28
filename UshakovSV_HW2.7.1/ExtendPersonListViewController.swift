@@ -31,7 +31,7 @@ extension ExtendPersonListViewController: UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-		let person = DataManager.shared.persons[indexPath.row]
+		let person = DataManager.shared.persons[indexPath.section]
 		cell.textLabel?.text = person.email
 		cell.detailTextLabel?.text = person.phone
 		return cell
@@ -41,5 +41,4 @@ extension ExtendPersonListViewController: UITableViewDataSource {
 		let person = DataManager.shared.persons[section]
 		return person.fullName
 	}
-	
 }
