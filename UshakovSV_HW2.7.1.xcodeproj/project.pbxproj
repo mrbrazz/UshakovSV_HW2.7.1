@@ -13,6 +13,12 @@
 		D6DA4BBE26B1D7C0009900E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4BBC26B1D7C0009900E3 /* Main.storyboard */; };
 		D6DA4BC026B1D7C1009900E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4BBF26B1D7C1009900E3 /* Assets.xcassets */; };
 		D6DA4BC326B1D7C1009900E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4BC126B1D7C1009900E3 /* LaunchScreen.storyboard */; };
+		D6DA4BCB26B1D908009900E3 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BCA26B1D908009900E3 /* MainTabBarController.swift */; };
+		D6DA4BCD26B1DA9F009900E3 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BCC26B1DA9F009900E3 /* PersonListViewController.swift */; };
+		D6DA4BCF26B1DAB5009900E3 /* ExtendPersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BCE26B1DAB5009900E3 /* ExtendPersonListViewController.swift */; };
+		D6DA4BD126B1E35C009900E3 /* DetailPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BD026B1E35C009900E3 /* DetailPersonViewController.swift */; };
+		D6DA4BD326B1E3B8009900E3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BD226B1E3B8009900E3 /* DataManager.swift */; };
+		D6DA4BD626B1E453009900E3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BD526B1E453009900E3 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		D6DA4BBF26B1D7C1009900E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6DA4BC226B1D7C1009900E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6DA4BC426B1D7C1009900E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DA4BCA26B1D908009900E3 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D6DA4BCC26B1DA9F009900E3 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		D6DA4BCE26B1DAB5009900E3 /* ExtendPersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendPersonListViewController.swift; sourceTree = "<group>"; };
+		D6DA4BD026B1E35C009900E3 /* DetailPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPersonViewController.swift; sourceTree = "<group>"; };
+		D6DA4BD226B1E3B8009900E3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D6DA4BD526B1E453009900E3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +72,25 @@
 				D6DA4BB826B1D7C0009900E3 /* SceneDelegate.swift */,
 				D6DA4BBA26B1D7C0009900E3 /* ViewController.swift */,
 				D6DA4BBC26B1D7C0009900E3 /* Main.storyboard */,
+				D6DA4BD026B1E35C009900E3 /* DetailPersonViewController.swift */,
+				D6DA4BD426B1E41F009900E3 /* DataManager */,
+				D6DA4BCC26B1DA9F009900E3 /* PersonListViewController.swift */,
+				D6DA4BCE26B1DAB5009900E3 /* ExtendPersonListViewController.swift */,
 				D6DA4BBF26B1D7C1009900E3 /* Assets.xcassets */,
 				D6DA4BC126B1D7C1009900E3 /* LaunchScreen.storyboard */,
 				D6DA4BC426B1D7C1009900E3 /* Info.plist */,
+				D6DA4BCA26B1D908009900E3 /* MainTabBarController.swift */,
 			);
 			path = UshakovSV_HW2.7.1;
+			sourceTree = "<group>";
+		};
+		D6DA4BD426B1E41F009900E3 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D6DA4BD226B1E3B8009900E3 /* DataManager.swift */,
+				D6DA4BD526B1E453009900E3 /* Person.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6DA4BBB26B1D7C0009900E3 /* ViewController.swift in Sources */,
+				D6DA4BD326B1E3B8009900E3 /* DataManager.swift in Sources */,
+				D6DA4BCF26B1DAB5009900E3 /* ExtendPersonListViewController.swift in Sources */,
 				D6DA4BB726B1D7C0009900E3 /* AppDelegate.swift in Sources */,
+				D6DA4BCD26B1DA9F009900E3 /* PersonListViewController.swift in Sources */,
+				D6DA4BD126B1E35C009900E3 /* DetailPersonViewController.swift in Sources */,
+				D6DA4BD626B1E453009900E3 /* Person.swift in Sources */,
+				D6DA4BCB26B1D908009900E3 /* MainTabBarController.swift in Sources */,
 				D6DA4BB926B1D7C0009900E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
