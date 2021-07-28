@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D6DA4BB726B1D7C0009900E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BB626B1D7C0009900E3 /* AppDelegate.swift */; };
 		D6DA4BB926B1D7C0009900E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BB826B1D7C0009900E3 /* SceneDelegate.swift */; };
-		D6DA4BBB26B1D7C0009900E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BBA26B1D7C0009900E3 /* ViewController.swift */; };
 		D6DA4BBE26B1D7C0009900E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4BBC26B1D7C0009900E3 /* Main.storyboard */; };
 		D6DA4BC026B1D7C1009900E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4BBF26B1D7C1009900E3 /* Assets.xcassets */; };
 		D6DA4BC326B1D7C1009900E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4BC126B1D7C1009900E3 /* LaunchScreen.storyboard */; };
@@ -25,7 +24,6 @@
 		D6DA4BB326B1D7C0009900E3 /* UshakovSV_HW2.7.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UshakovSV_HW2.7.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DA4BB626B1D7C0009900E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6DA4BB826B1D7C0009900E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6DA4BBA26B1D7C0009900E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6DA4BBD26B1D7C0009900E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6DA4BBF26B1D7C1009900E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6DA4BC226B1D7C1009900E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,16 +68,10 @@
 			children = (
 				D6DA4BB626B1D7C0009900E3 /* AppDelegate.swift */,
 				D6DA4BB826B1D7C0009900E3 /* SceneDelegate.swift */,
-				D6DA4BBA26B1D7C0009900E3 /* ViewController.swift */,
 				D6DA4BBC26B1D7C0009900E3 /* Main.storyboard */,
-				D6DA4BD026B1E35C009900E3 /* DetailPersonViewController.swift */,
+				D6DA4BD826B20F2C009900E3 /* ViewControllers */,
 				D6DA4BD426B1E41F009900E3 /* DataManager */,
-				D6DA4BCC26B1DA9F009900E3 /* PersonListViewController.swift */,
-				D6DA4BCE26B1DAB5009900E3 /* ExtendPersonListViewController.swift */,
-				D6DA4BBF26B1D7C1009900E3 /* Assets.xcassets */,
-				D6DA4BC126B1D7C1009900E3 /* LaunchScreen.storyboard */,
-				D6DA4BC426B1D7C1009900E3 /* Info.plist */,
-				D6DA4BCA26B1D908009900E3 /* MainTabBarController.swift */,
+				D6DA4BD726B20EF4009900E3 /* SupportingFiles */,
 			);
 			path = UshakovSV_HW2.7.1;
 			sourceTree = "<group>";
@@ -91,6 +83,27 @@
 				D6DA4BD526B1E453009900E3 /* Person.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		D6DA4BD726B20EF4009900E3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D6DA4BBF26B1D7C1009900E3 /* Assets.xcassets */,
+				D6DA4BC126B1D7C1009900E3 /* LaunchScreen.storyboard */,
+				D6DA4BC426B1D7C1009900E3 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D6DA4BD826B20F2C009900E3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6DA4BD026B1E35C009900E3 /* DetailPersonViewController.swift */,
+				D6DA4BCC26B1DA9F009900E3 /* PersonListViewController.swift */,
+				D6DA4BCE26B1DAB5009900E3 /* ExtendPersonListViewController.swift */,
+				D6DA4BCA26B1D908009900E3 /* MainTabBarController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +176,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6DA4BBB26B1D7C0009900E3 /* ViewController.swift in Sources */,
 				D6DA4BD326B1E3B8009900E3 /* DataManager.swift in Sources */,
 				D6DA4BCF26B1DAB5009900E3 /* ExtendPersonListViewController.swift in Sources */,
 				D6DA4BB726B1D7C0009900E3 /* AppDelegate.swift in Sources */,
@@ -319,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UshakovSV_HW2.7.1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UshakovSV_HW2.7.1/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,7 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UshakovSV_HW2.7.1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UshakovSV_HW2.7.1/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
