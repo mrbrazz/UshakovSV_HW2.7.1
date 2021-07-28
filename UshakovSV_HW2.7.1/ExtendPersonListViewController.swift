@@ -13,6 +13,33 @@ class ExtendPersonListViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		tableView.dataSource = self
 		print("Extend")
 	}
+}
+
+// MARK: - UITableViewDataSource
+
+extension ExtendPersonListViewController: UITableViewDataSource {
+	func numberOfSections(in tableView: UITableView) -> Int {
+		DataManager.shared.persons.count
+	}
+
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		1
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+		let person = DataManager.shared.persons[indexPath.row]
+		cell.textLabel?.text = person.email
+		cell.detailTextLabel?.text = person.phone
+		return cell
+	}
+	
+	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		let person = DataManager.shared.persons[section]
+		return person.fullName
+	}
+	
 }

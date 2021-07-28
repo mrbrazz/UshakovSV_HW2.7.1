@@ -14,7 +14,6 @@ class PersonListViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		tableView.dataSource = self
-		print("Person")
 	}
 }
 
@@ -28,7 +27,7 @@ extension PersonListViewController: UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
 		let person = DataManager.shared.persons[indexPath.row]
-		cell.textLabel?.text = "\(person.name) \(person.lastName)"
+		cell.textLabel?.text = person.fullName
 		return cell
 	}
 }
