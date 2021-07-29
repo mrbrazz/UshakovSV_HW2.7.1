@@ -14,7 +14,6 @@ class ExtendPersonListViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		tableView.dataSource = self
-		print("Extend")
 	}
 }
 

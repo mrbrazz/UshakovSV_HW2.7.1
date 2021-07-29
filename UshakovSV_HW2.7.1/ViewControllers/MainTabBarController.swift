@@ -12,6 +12,5 @@ class MainTbBarController: UITabBarController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		print("123")
 	}
 }
